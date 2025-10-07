@@ -1,5 +1,9 @@
 # FirstCPP
 
+![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)
+
+Replace `OWNER/REPO` in the badge URL with your GitHub repo (for example `myuser/FirstCPP`).
+
 Minimal C++ project scaffolded with CMake.
 
 This repository contains a small example program and a simple smoke test.
@@ -69,3 +73,17 @@ To debug the project in VS Code:
 ---
 
 If you'd like, I can add a CI workflow (GitHub Actions) to build and run the tests automatically on push.
+
+## Platform notes
+
+- On Linux/macOS use a system clang/gcc and the `cmake`/`ctest` commands as shown above.
+- On Windows prefer using the Visual Studio generator (the default when running `cmake` from a Visual Studio command prompt). The README's commands use `--config Debug` for multi-config generators.
+
+## Troubleshooting
+
+- "CMake Error: Could not find a package" — ensure required toolchain and CMake are installed and in PATH.
+- Linker errors on Windows — check that you used the correct generator (Visual Studio) or toolchain. For clang on Windows, ensure the MSVC toolchain is available.
+- Tests not discovered by CTest — if you modify CMake targets, rerun `cmake ..` in `build/` and rebuild.
+
+---
+
