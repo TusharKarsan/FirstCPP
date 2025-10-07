@@ -1,20 +1,70 @@
-# CppCMakeProject
 
-A simple C++ project scaffolded with CMake.
+# FirstCPP
 
-## Build Instructions
+Minimal C++ project scaffolded with CMake.
 
-```sh
+This repository contains a small example program and a simple smoke test.
+
+## Requirements
+
+- CMake >= 3.10
+- A C++17-capable compiler (MSVC, clang, or gcc)
+- (Optional) Visual Studio Code for the included debug/task helpers
+
+## Build (PowerShell)
+
+Open a PowerShell prompt and run:
+
+```powershell
 mkdir build
 cd build
 cmake ..
-cmake --build .
+cmake --build . --config Debug
 ```
 
-## Run
+Notes:
+- On multi-configuration generators (Visual Studio), pass `--config Debug` to the build and `ctest` commands.
 
-After building, run the executable from the `build` directory:
+## Run the program
 
-```sh
-./CppCMakeProject
+From the `build` directory execute the built binary (Debug config on Windows):
+
+```powershell
+.\Debug\FirstCPP.exe
 ```
+
+Or from the workspace root:
+
+```powershell
+.\build\Debug\FirstCPP.exe
+```
+
+## Tests
+
+A small test executable `test_example` was added under `tests/` and wired into CMake/CTest.
+To run tests from the build directory:
+
+```powershell
+cd build
+ctest --output-on-failure -C Debug -V
+```
+
+If you add or change tests, re-run `cmake ..` in the `build` directory to regenerate test rules.
+
+## VS Code
+
+This project includes `/.vscode/launch.json` and `/.vscode/tasks.json` to make it easier to build and debug from VS Code. Those files are intentionally tracked. The default `tasks.json` uses `clang++` for the single-file build task; update it if you need a different toolchain.
+
+To debug the project in VS Code:
+
+- Open the project folder in VS Code
+- Run the `CMake: build` task (Tasks > Run Build Task or use the task in the status bar)
+- Press F5 or use the Debug view to start `Launch FirstCPP (Debug)`
+
+## Contributing
+
+- Add tests under `tests/` and update `CMakeLists.txt` if you add additional test targets. Run CMake from `build/` to update the project files.
+
+---
+
+If you'd like, I can add a CI workflow (GitHub Actions) to build and run the tests automatically on push.
