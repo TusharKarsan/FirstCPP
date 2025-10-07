@@ -8,9 +8,9 @@ This project is a hands-on return to modern C++. The goal is to relearn core con
 
 ## Requirements
 
-* **C++ compiler** with C++17 or later support
-* **CMake** 3.20 or newer
-* **Visual Studio Code** with the C++ extension (for IDE support)
+* **C++ compiler** with C++17 or later support,
+* **CMake** 3.20 or newer,
+* **Visual Studio Code** with the C++ extension (*for IDE support*).
 
 ## Getting Started
 
@@ -24,10 +24,18 @@ cd FirstCPP
 Create a build directory and run CMake:
 
 ```bash
+# Create a build directory
 mkdir build
 cd build
+
+# Generate build files using CMake
 cmake ..
+
+# Build the project
 cmake --build .
+
+# Run the executable
+.\FirstCPP.exe
 ```
 
 Run the executable from the build folder.
