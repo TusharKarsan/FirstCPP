@@ -1,0 +1,26 @@
+# C++/CMake
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.obj
+*.exe
+*.log
+*.user
+*.suo
+*.vcxproj*
+*.pdb
+*.ilk
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.tlog
+*.idb
+*.class
+*.pyc
+*.DS_Store
+*.swp
