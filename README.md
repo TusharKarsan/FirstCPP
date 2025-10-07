@@ -1,5 +1,7 @@
 # FirstCPP
 
+![CI](https://github.com/TusharKarsan/FirstCPP/actions/workflows/ci.yml/badge.svg)
+
 After nearly two decades away from C++, I am exploring the language again with modern tools like CMake.
 
 ## Purpose
