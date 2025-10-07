@@ -1,8 +1,8 @@
 # FirstCPP
 
-![CI](https://github.com/TusharKarsan/FristCPP/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/TusharKarsan/FirstCPP/actions/workflows/ci.yml/badge.svg)
 
-This badge shows the status of the `CI` workflow in `TusharKarsan/FristCPP`.
+This badge shows the status of the `CI` workflow in `TusharKarsan/FirstCPP`.
 
 Minimal C++ project scaffolded with CMake.
 
