@@ -1,4 +1,3 @@
-
 # FirstCPP
 
 Minimal C++ project scaffolded with CMake.
@@ -23,6 +22,7 @@ cmake --build . --config Debug
 ```
 
 Notes:
+
 - On multi-configuration generators (Visual Studio), pass `--config Debug` to the build and `ctest` commands.
 
 ## Run the program
@@ -42,6 +42,7 @@ Or from the workspace root:
 ## Tests
 
 A small test executable `test_example` was added under `tests/` and wired into CMake/CTest.
+
 To run tests from the build directory:
 
 ```powershell
