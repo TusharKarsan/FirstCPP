@@ -8,7 +8,7 @@ Minimal C++ project scaffolded with CMake.
 
 This repository contains a small example program and a simple smoke test.
 
-After nearly two decades away from C++, the author is exploring it again with modern tools like CMake.
+It has been almost twenty years since the author last wrote C++. This project is a return to the language using modern tools such as CMake.
 
 ## Requirements
 
