@@ -7,3 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(include)
 
 add_executable(${PROJECT_NAME} src/main.cpp src/example.cpp)
+ 
+enable_testing()
+
+# Test executable that exercises exampleFunction
+add_executable(test_example tests/test_example.cpp src/example.cpp)
+add_test(NAME example_test COMMAND test_example)

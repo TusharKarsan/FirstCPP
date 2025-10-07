@@ -24,3 +24,25 @@ Makefile
 *.pyc
 *.DS_Store
 *.swp
+
+# IDE / editor folders
+.vscode/
+.idea/
+
+# Permit sharing workspace-specific launch/tasks while still ignoring other .vscode files
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# In-source build directories (if someone builds in-source)
+/Debug/
+/Release/
+
+# Test / coverage output
+coverage/
+test-output/
+*.profdata
+*.gcda
+*.gcno
+
+# Windows DLLs (optional)
+*.dll

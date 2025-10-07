@@ -18,8 +18,8 @@
         },
         {
             "type": "cppbuild",
-            "label": "C/C++: clang++.exe build active file",
-            "command": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
+            "label": "C/C++: clang++ build active file",
+            "command": "clang++",
             "args": [
                 "-fcolor-diagnostics",
                 "-fansi-escape-codes",
