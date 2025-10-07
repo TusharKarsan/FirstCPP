@@ -89,3 +89,17 @@ If you'd like, I can add a CI workflow (GitHub Actions) to build and run the tes
 
 ---
 
+## Repository rename
+
+This repository was renamed from `FristCPP` to `FirstCPP`. If you have a local clone that still points to the old remote, update it with the following commands:
+
+```powershell
+# Set the origin to the new repository URL (adjust if you use SSH)
+git remote set-url origin https://github.com/TusharKarsan/FirstCPP.git
+
+# Push your current branch and set the upstream
+git push -u origin main
+```
+
+If you use CI badges or other external links that referenced the old name, update them to point to `TusharKarsan/FirstCPP` (the CI badge at the top of this README has been updated).
+
